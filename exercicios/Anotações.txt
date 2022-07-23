@@ -1,0 +1,43 @@
+<meta charset="UTF-8"> 	= DEFINIR FORMATO DE TEXTO
+<meta name		="viewport" content="width=device-width, initial-scale=1.0">
+<P></P> 		= CRIAR PARÁGRAFO
+<b></b> 		= FORMATO EM NEGRITO (NÃO SEMÂNTICA, NÃO TEM SIGNIFICADO)
+<strong></strong> 	= ALÉM DA FORMA EM NEGRITO QUE NÓS QUEREMOS, DA UM SENTIDO, UM SENTIDO DE DESTAQUE OU FORTE
+<i></i> 		= FORMATO EM ITÁLICO NÃO SEMANTICO
+<br> 			= QUEBRA DE LINHA
+<hr> 			= LINHA HORIZONTAL
+<html lang="pt-br">
+<h1></h1> 		= TÍTULOS E SUBTÍTULOS QUE VÃO DE H1(O MAIOR) À H6(O MENOR)
+<title></title> 	= TÍTULO NA GUIA
+link:favicon 		= ÍCONE NA GUIA
+HTML - Conteúdo
+CSS - Estilo
+JavaScrip - Interatividade
+ESCOLHA AS CORES PARA O SITE AQUI: https://color.adobe.com / https://paletton.com / https://coolors.co - 
+FONTES DO GOOGLE:https://fonts.google.com
+
+Pegue uma cor e altere a saturação e luminosidade para ter um degradê bom
+
+
+<!DOCTYPE <html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaGuia</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+Conhecimentos gerais sobre html, css
+pouco em python e java script
+canal do youtube e instagram buffado
+pc para editar videos
+conhecimentos gerais de tecnologia, software hardware
+
+niice
+

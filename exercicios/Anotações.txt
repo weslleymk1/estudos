@@ -1,14 +1,8 @@
-<meta charset="UTF-8"> 	= DEFINIR FORMATO DE TEXTO
-<meta name		="viewport" content="width=device-width, initial-scale=1.0">
 <P></P> 		= CRIAR PARÁGRAFO
 <b></b> 		= FORMATO EM NEGRITO (NÃO SEMÂNTICA, NÃO TEM SIGNIFICADO)
 <strong></strong> 	= ALÉM DA FORMA EM NEGRITO QUE NÓS QUEREMOS, DA UM SENTIDO, UM SENTIDO DE DESTAQUE OU FORTE
 <i></i> 		= FORMATO EM ITÁLICO NÃO SEMANTICO
 <br> 			= QUEBRA DE LINHA
-<hr> 			= LINHA HORIZONTAL
-<html lang="pt-br">
-<h1></h1> 		= TÍTULOS E SUBTÍTULOS QUE VÃO DE H1(O MAIOR) À H6(O MENOR)
-<title></title> 	= TÍTULO NA GUIA
 link:favicon 		= ÍCONE NA GUIA
 HTML - Conteúdo
 CSS - Estilo

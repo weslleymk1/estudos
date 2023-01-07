@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Hora do dia</title>
 
     <style>
         *{
@@ -39,21 +39,25 @@
             color: white;
             text-align: center;
         }
+
+        div img {
+            width: 400px;
+        }
     </style>
 
 </head>
-<body>
+<body onload='carregar()' id="body">
     <header>
-        <h1>Titulo</h1>
+        <h1>Hora do Dia</h1>
     </header>
 
     <section>
-        <div>
-            <p>testando</p>
+        <div id="msg">
+            aqui vai aparecer a mensagem...
         </div>
 
-        <div>
-            <p>testando</p>
+        <div id="foto">
+            <img id="imagem" src="1.jpg" alt="foto manha">
         </div>
     </section>
 
@@ -62,6 +66,53 @@
     </footer>
 
     <script>
+
+
+
+        function carregar() {
+            let msg = window.document.querySelector("div#msg")
+            let img = window.document.querySelector("div#imagem")
+            let data = new Date()
+            let hora = data.getHours()
+            let minuto = data.getMinutes()
+            let horario = ""
+
+            if (hora >= 5 && hora < 12){
+                horario = "da manhã"
+            }
+            else if (hora >= 12 && hora < 18){
+                horario = "da tarde"
+            }
+            else if (hora >= 18 && hora <= 24 ) {
+                horario = "da noite"
+            }
+            else {
+                horario = "da madrugada"
+            }
+
+
+            if (hora > 23){
+                msg.innerHTML = "Infelizmente não conseguimos detectar o horário, por favor, ajuste seu relógio e tente novamente."
+            }
+            else {
+            msg.innerHTML = `Agora são exatamente ${hora}h e ${minuto}min ${horario}.`
+            }
+
+
+            if (hora >= 5 && hora < 12){
+                imagem.src = "1.jpg"
+                document.body.style.background = "#40E0D0"
+            }
+            else if (hora >= 12 && hora < 18) {
+                imagem.src = "2.jpg"
+                document.body.style.background = "#CD853F"
+            }
+            else {
+                imagem.src = "3.jpg"
+                document.body.style.background = "#4F4F4F"
+            }
+
+        }
 
 
     </script>

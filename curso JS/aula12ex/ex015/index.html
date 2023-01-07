@@ -29,6 +29,9 @@
             margin: auto;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
         }
+        #foto {
+            width: 200px;
+        }
 
         footer{
             padding: 20px;
@@ -50,8 +53,8 @@
             </p>
 
             <p>Sexo:
-                <input type="radio" name="radsex" id="mas" checked>
-                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
 
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Feminino</label>
@@ -65,7 +68,7 @@
 
         <div id="res">
             Preencha os dados acima para ver o resultado!
-        
+            <img id="imagem" src="" alt="">
         </div>
     </section>
 
@@ -78,13 +81,66 @@
         function verificar() {
             let data = new Date()
             let ano = data.getFullYear()
+
+
+            let img = document.querySelector("div#imagem")
+
+
             let fano = document.querySelector("input#txtano")
             let res = document.querySelector("div#res")
+            //img.src = "idoso.jpg"
+            imagem.src = "bebe.jpg"
+
+
+            let fsex = document.getElementsByName("radsex")
+            let genero = " "
+            let maturidade = " "
+            let idade = ano - Number(fano.value)
+
+
+
+            if (fsex[0].checked){
+                genero = "Masculino"
+            }else{
+                genero = "Feminino"
+            }
+
+
+            if (idade >= 0 && idade < 16){
+                maturidade = "Criança"
+            }else if (idade >=16 && idade <24 ) {
+                maturidade = "Jovem"
+            }else if (idade >= 24 && idade < 50){
+                maturidade = "Adulto(a)"
+            }else {
+                maturidade = "Idoso(a)"
+            }
+
 
             if (fano.value.length == 0 || Number(fano.value) > ano){
-            alert ("error code 171")
+            alert ("[ERROR]")
             }
+            else{
+                res.innerHTML = `Você é ${maturidade}, tem ${idade} anos e é do sexo ${genero}`
+
+              
+
+
+
+                /*if (idade >= 0 && idade < 16){
+                    foto.src = "bebe.jpg"
+                }else if (idade >=16 && idade <24){
+                    foto.src = "jovem.jpg"
+                }else if (idade >= 24 && idade < 50){
+                    foto.src = "adulto.jpg"
+                }else {
+                    foto.src = "idoso.jpg"
+                }*/
+            }
+            
         }
+
+        
     </script>
     
 </body>
